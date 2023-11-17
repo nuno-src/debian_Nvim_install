@@ -1,5 +1,6 @@
 vim.opt.number = true
-vim.opt.number = a
+vim.opt.mouse = a
+vim.opt.laststatus = 2
 
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
