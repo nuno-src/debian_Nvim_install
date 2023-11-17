@@ -21,7 +21,7 @@ link=https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-linux64.tar.
 # PATH=$PATH:/home/$USER/.local/bin
 
 
-cd /home/$USER/.local/bin
+cd /home/$USER/.local/bin/
 
 echo = ""
 echo "Downloading..."
@@ -31,7 +31,7 @@ echo = ""
 echo "Extracting..."
 tar xzvf nvim-linux64.tar.gz
 
-rm -fr nvim-linux64
+rm -fr nvim-linux64.tar.gz
 
 ln -s ./nvim-linux64/bin/nvim ./nvim
 
