@@ -7,5 +7,5 @@ bash script to install NeoVim
 NOTE: No need to run with sudo command
   
 # Extra:
-init.vim and init.lua are basic config files, just choose one and movit to neovim config folder (~/.config/nvim/)
+init.vim and init.lua are basic config files, just choose one and movit to neovim config folder (`~/.config/nvim/`)
 
