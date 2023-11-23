@@ -20,6 +20,16 @@ link=https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-linux64.tar.
 # Add bin to PATH
 # PATH=$PATH:/home/$USER/.local/bin
 
+#check if exists
+if [ ! -d "~/.local/.local/bin" ];
+then
+  mkdir ~/.local/bin/
+fi
+
+if [ ! -d "~/.config/nvim" ];
+then
+  mkdir ~/.config/nvim/
+fi
 
 cd /home/$USER/.local/bin/
 
