@@ -21,10 +21,26 @@ link=https://github.com/neovim/neovim/releases/download/v0.9.4/nvim-linux64.tar.
 # PATH=$PATH:/home/$USER/.local/bin
 
 #check if exists
-if [ ! -d "~/.local/.local/bin" ];
+if [ ! -d "~/.local" ];
 then
+  echo -e "${RED}~/.local do not exist, trying to create it... ${NC}"
+  mkdir ~/.local/
+fi
+
+
+if [ ! -d "~/.local/bin" ];
+then
+  echo -e "${RED}~/.local/bin do not exist, trying to create it... ${NC}"
   mkdir ~/.local/bin/
 fi
+
+
+if [ ! -d "~/.config" ];
+then
+  echo -e "${RED}~/.config/ do not exist, trying to create it... ${NC}"
+  mkdir ~/.config/
+fi
+
 
 if [ ! -d "~/.config/nvim" ];
 then
